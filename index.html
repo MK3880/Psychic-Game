@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>game thing</title>
+</head>
+<body>
+  <h2>Psychic Game</h2>
+
+  <p>Guess what letter I'm thinking of (press a key).</p>
+
+  <p class = "wins">Wins: </p>
+
+  <p class = "losses">Losses: </p>
+
+  <p class = "guessesl">Guesses left: </p>
+
+  <p class = "guesses">Your Guesses so far: </p>
+
+
+
+  <img src="https://media1.tenor.com/images/c8a282b8364b170d40dd6ce7c32d8483/tenor.gif?itemid=9063763"/>
+
+
+
+
+         <script>
+    
+         Array.prototype.random = function (length) {
+          return this[Math.floor((Math.random()*length))];
+         }
+
+         var letters = ['a','b','c']
+         var chosen_letters = letters.random(letters.length)
+         console.log(chosen_letters) 
+
+
+//other variables would have been here
+
+
+ 
+
+         document.onkeypress = function(event) {
+         var userGuess = event.key;
+
+         if(userGuess === chosen_letters){
+             console.log("winner")
+
+         } else {
+             console.log("wrong")
+         }
+
+
+
+
+
+
+
+
+        }
+        //I just stopped giving a damn after the third day of this deleted everything and started over. Mistake was made in wasting time trying to build code I don't understand yet. 
+        </script>
+
+    </body>
+</html>
